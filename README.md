@@ -2,7 +2,7 @@
 Repositorio realizado para la prueba de Data Engineer en Pragma.
 
 ## Instalacion
-Se debe instalar los paquetes en el requirements.txt
+Se debe instalar los paquetes en el requirements.txt "pip install -r requirements.txt"
 
 
 ## Aclaraciones
