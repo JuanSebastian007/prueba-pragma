@@ -45,6 +45,12 @@ def load_csv_to_postgres(csv_files):
                     # If 'price' column value is not None, add it to the list for statistics
                     if row[1] is not None:
                         price_values.append(float(row[1]))
+                    # # Calculate and print the statistics for the 'price' column after each row is loaded
+                    # mean_value = statistics.mean(price_values)
+                    # minimum_value = min(price_values)
+                    # maximum_value = max(price_values)
+                    # print(f"Price Statistics:\nMean Value: {mean_value}\nMinimum Value: {minimum_value}\nMaximum Value: {maximum_value}")
+                    # print(f"File {csv_file} loaded successfully. Total rows loaded: {total_rows_loaded}\n")
             connection.commit()
             # Calculate and print the statistics for the 'price' column after each file is loaded
             mean_value = statistics.mean(price_values)
